@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D08189C8-0116-4F4B-8E0B-3BC4CFB8D399}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_06._GAME__BombardovanjePodgorice.My.MyApplication</StartupObject>
+    <RootNamespace>_06._GAME__BombardovanjePodgorice</RootNamespace>
+    <AssemblyName>_06._GAME__BombardovanjePodgorice</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>_06._GAME__BombardovanjePodgorice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>_06._GAME__BombardovanjePodgorice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ikona.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bazaPodataka.vb" />
+    <Compile Include="BazaPodatakaForme\citanjePoruke.Designer.vb">
+      <DependentUpon>citanjePoruke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\citanjePoruke.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\crtanjeKonzoleIgrac.vb" />
+    <Compile Include="BazaPodatakaForme\konzolaNajboljiRez.Designer.vb">
+      <DependentUpon>konzolaNajboljiRez.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\konzolaNajboljiRez.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\konzolaPoruke.Designer.vb">
+      <DependentUpon>konzolaPoruke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\konzolaPoruke.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\konzolaSviIgraci.Designer.vb">
+      <DependentUpon>konzolaSviIgraci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\konzolaSviIgraci.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\menu_login.Designer.vb">
+      <DependentUpon>menu_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\menu_login.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\splashScreen.Designer.vb">
+      <DependentUpon>splashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaForme\splashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glavnaForma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glavnaForma.Designer.vb">
+      <DependentUpon>glavnaForma.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="spoljasnjiResursi.vb" />
+    <Compile Include="unutrasnjiResursi.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>unutrasnjiResursi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_Meni.Designer.vb">
+      <DependentUpon>_Meni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_Meni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_Meni2.Designer.vb">
+      <DependentUpon>_Meni2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_Meni2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_Video.Designer.vb">
+      <DependentUpon>_Video.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_Video.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BazaPodatakaForme\citanjePoruke.resx">
+      <DependentUpon>citanjePoruke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaPodatakaForme\konzolaNajboljiRez.resx">
+      <DependentUpon>konzolaNajboljiRez.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaPodatakaForme\konzolaPoruke.resx">
+      <DependentUpon>konzolaPoruke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaPodatakaForme\konzolaSviIgraci.resx">
+      <DependentUpon>konzolaSviIgraci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaPodatakaForme\menu_login.resx">
+      <DependentUpon>menu_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaPodatakaForme\splashScreen.resx">
+      <DependentUpon>splashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glavnaForma.resx">
+      <DependentUpon>glavnaForma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unutrasnjiResursi.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>unutrasnjiResursi.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Meni.resx">
+      <DependentUpon>_Meni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Meni2.resx">
+      <DependentUpon>_Meni2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Video.resx">
+      <DependentUpon>_Video.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karSjenka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karPlane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karSjenka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karBomba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapPG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapPGover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucBomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karBblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karBdim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guiUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backKrajRunde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinskaSlika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuOpcije.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_maliLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ikona.ico" />
+    <None Include="Resources\menu_ucitavanje.png" />
+    <None Include="Resources\status_pomoc.png" />
+    <None Include="Resources\status_bomba.png" />
+    <None Include="Resources\status_back.png" />
+    <None Include="Resources\statu_vrijeme.png" />
+    <None Include="Resources\satus_vrijeme_bar.png" />
+    <None Include="Resources\meni_poruka_back.png" />
+    <None Include="Resources\konzola_igrac_back.jpg" />
+    <None Include="Resources\konzola_poruke_back.jpg" />
+    <None Include="Resources\konzola_poruka_za.png" />
+    <None Include="Resources\konzola_poruka_procitano.png" />
+    <None Include="Resources\konzola_poruka_od.png" />
+    <None Include="Resources\konzola_poruka_neprocitano.png" />
+    <None Include="Resources\konzola_poruke_logo.png" />
+    <None Include="Resources\konzola_rezuktati_zlato.png" />
+    <None Include="Resources\konzola_rezuktati_srebro.png" />
+    <None Include="Resources\konzola_rezuktati_bronza.png" />
+    <None Include="Resources\konzola_rezuktati_black.png" />
+    <None Include="Resources\konzola_najboljiRez_logo.png" />
+    <None Include="Resources\konzola_sviIgraci_online.png" />
+    <None Include="Resources\konzola_sviIgraci_offline.png" />
+    <None Include="Resources\konzola_sviIgraci_logo.png" />
+    <None Include="Resources\menu_saBazom.png" />
+    <None Include="Resources\menu_bezBaze_over.png" />
+    <None Include="Resources\menu_bezBaze.png" />
+    <None Include="Resources\login002.png" />
+    <None Include="Resources\login001.png" />
+    <None Include="Resources\login_ulazak.png" />
+    <None Include="Resources\login_standard.png" />
+    <None Include="Resources\login_registracija.png" />
+    <None Include="Resources\login_tabs.png" />
+    <None Include="Resources\login_button.png" />
+    <None Include="Resources\guiGame.png" />
+    <None Include="Resources\ikona.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
